@@ -45,6 +45,13 @@ calculateHealthStarRating(Category.OtherFoods, {
 
 ### calculateHealthStarRating(category, nutritionalInformation)
 
+#### returns
+
+One of the following values will be returned:
+```
+0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5
+```
+
 #### category
 
 Type: `Category`
