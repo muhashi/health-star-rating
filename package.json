@@ -1,6 +1,6 @@
 {
 	"name": "health-star-rating",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Calculates the ANZ health star rating of a food/beverage product given nutritional information",
 	"license": "CC0-1.0",
 	"repository": "muhashi/health-star-rating",
