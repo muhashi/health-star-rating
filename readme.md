@@ -1,6 +1,6 @@
 # health-star-rating
 
-> Calculate the ANZ health star rating of food given nutritional information
+> Calculate the [ANZ health star rating](https://en.wikipedia.org/wiki/Health_Star_Rating_System) of food given nutritional information
 
 ## Install
 
