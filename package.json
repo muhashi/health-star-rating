@@ -1,0 +1,37 @@
+{
+	"name": "health-star-rating",
+	"version": "0.0.0",
+	"description": "Calculates the ANZ health star rating of a food/beverage product given nutritional information",
+	"license": "CC0-1.0",
+	"repository": "muhashi/health-star-rating",
+	"author": {
+		"name": "muhashi",
+		"email": "muhamedoes+muhashi@gmail.com",
+		"url": "https://muhashi.com"
+	},
+	"type": "module",
+	"exports": "./index.js",
+	"engines": {
+		"node": ">=16"
+	},
+	"scripts": {
+		"test": "ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"health star rating",
+		"health",
+		"nutritional",
+		"nutrition",
+		"food",
+		"australia",
+		"new zealand",
+		"beverage"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^5.3.0"
+	}
+}
