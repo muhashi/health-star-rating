@@ -180,6 +180,20 @@ test('calculateHealthStarRating - Category1 with resulting rating of 3.5', t => 
   t.is(result, expectedRating);
 });
 
+test("calculateHealthStarRating - Sanitarium's Weet-Bix Blends Multi-Grain", t => {
+  const category = Category.OtherFoods;
+
+  const expectedRating = 4; // -6 -- -2
+  const result = calculateHealthStarRating(category, {
+    energykJ: 1610, // 4
+    saturatedFatGrams: 1.7, // 1
+    sodiumMilligrams: 267, // 2
+    totalSugarsGrams: 9.6, // 2
+    proteinGrams: 10.7, // -6
+    fibreGrams: 8.9, // -9
+  });
+  t.is(result, expectedRating);
+});
 
 test('calculateHealthStarRating - Unknown Category', t => {
   const category = null;
