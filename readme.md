@@ -75,7 +75,7 @@ These are the possible categories:
 - `WaterBasedIcedConfection`
 - `OtherFoods`: Any food that doesn't fit in the above categories.
 
-#### options
+#### nutritionalInformation
 
 Type: `object`
 
