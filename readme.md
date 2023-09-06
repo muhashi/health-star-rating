@@ -97,6 +97,6 @@ Possible values:
 - `ContainsFruitOrVegetable`
 - `ContainsNutsOrLegumes`
 
-## Aknowledgement
+## Acknowledgement
 
 The calculations and health star rating information is taken from the https://healthstarrating.gov.au website
