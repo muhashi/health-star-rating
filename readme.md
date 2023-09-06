@@ -80,7 +80,7 @@ These are the possible categories:
 Type: `object`
 
 Required keys:
-- `energykJ` (`int`): kilojoule content of the food per 100g or 100ml
+- `energykJ` (`int`): kilojoule content of the food per 100g or 100ml (note it's lowercase 'k' and uppercase 'J')
 - `sodiumMilligrams` (`int`): sodium content in mg per 100g or 100ml
 - `saturatedFatGrams` (`float`): saturated fat in grams per 100g or 100ml
 - `totalSugarsGrams` (`float`): sugar content in grams per 100g or 100ml
