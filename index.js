@@ -17,27 +17,27 @@ export const Attributes = {
   ContainsNutsOrLegumes: 1,
 };
 
-function Category1(category) {
+export function Category1(category) {
   return [Category.NonDairyBeverages, Category.Jellies, Category.WaterBasedIcedConfection].includes(category);
 }
 
-function Category1D(category) {
+export function Category1D(category) {
   return category === Category.DairyBeverages;
 }
 
-function Category2(category) {
+export function Category2(category) {
   return category === Category.OtherFoods;
 }
 
-function Category2D(category) {
+export function Category2D(category) {
   return category === Category.DairyFoods;
 }
 
-function Category3(category) {
+export function Category3(category) {
   return category === Category.FatsOilsAndSpreads;
 }
 
-function Category3D(category) {
+export function Category3D(category) {
   return category === Category.Cheese;
 }
 
