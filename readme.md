@@ -2,6 +2,8 @@
 
 > Calculate the [ANZ health star rating](https://en.wikipedia.org/wiki/Health_Star_Rating_System) of food given nutritional information
 
+[Use the web calculator here](https://muhashi.com/health-star-rating-web/)
+
 ## Install
 
 ```sh
