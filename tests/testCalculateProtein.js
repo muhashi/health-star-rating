@@ -90,3 +90,25 @@ test('calculateProteinPoints - Unknown Category', t => {
   const result = calculateProteinPoints(category, baselinePoints, fruitVegetableNutLegumePoints, proteinGrams);
   t.is(result, expectedPoints);
 });
+
+test('calculateProteinPoints - Protein = 3.2g', t => {
+  const category = Category.OtherFoods;
+  const baselinePoints = 5;
+  const fruitVegetableNutLegumePoints = 2;
+  const proteinGrams = 3.2;
+
+  const expectedPoints = 2;
+  const result = calculateProteinPoints(category, baselinePoints, fruitVegetableNutLegumePoints, proteinGrams);
+  t.is(result, expectedPoints);
+});
+
+test('calculateProteinPoints - Protein = 3.1g', t => {
+  const category = Category.OtherFoods;
+  const baselinePoints = 5;
+  const fruitVegetableNutLegumePoints = 2;
+  const proteinGrams = 3.1;
+
+  const expectedPoints = 1;
+  const result = calculateProteinPoints(category, baselinePoints, fruitVegetableNutLegumePoints, proteinGrams);
+  t.is(result, expectedPoints);
+});

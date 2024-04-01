@@ -202,3 +202,18 @@ test('calculateHealthStarRating - Unknown Category', t => {
     calculateHealthStarRating(category);
   }, { instanceOf: TypeError });
 });
+
+test("calculateHealthStarRating - Masters Chocolate Milk", t => {
+  const category = Category.DairyBeverages;
+
+  const expectedRating = 4; // 2 - 2 = 0
+  const result = calculateHealthStarRating(category, {
+    energykJ: 243, // 0
+    saturatedFatGrams: 1.2, // 1
+    sodiumMilligrams: 56, // 0
+    totalSugarsGrams: 6.9, // 1
+    proteinGrams: 3.2, // 2
+    fibreGrams: 0.6, // 0
+  });
+  t.is(result, expectedRating);
+});
