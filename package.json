@@ -10,15 +10,19 @@
         "url": "https://muhashi.com"
     },
     "type": "module",
-    "exports": "./index.js",
+    "exports": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+    },
     "engines": {
         "node": ">=18"
     },
     "scripts": {
-        "test": "ava"
+        "test": "ava && tsd"
     },
     "files": [
-        "index.js"
+        "index.js",
+        "index.d.ts"
     ],
     "keywords": [
         "health star rating",
@@ -31,8 +35,8 @@
         "beverage",
         "drink"
     ],
-    "dependencies": {},
     "devDependencies": {
-        "ava": "^6.1.3"
+        "ava": "^6.1.3",
+        "tsd": "^0.31.2"
     }
 }

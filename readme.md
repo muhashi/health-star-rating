@@ -2,6 +2,8 @@
 
 > Calculate the [ANZ health star rating](https://en.wikipedia.org/wiki/Health_Star_Rating_System) of food given nutritional information
 
+Calculates the health star rating of foods based on [Australian Government guidelines](https://web.archive.org/web/20240401093020/http://healthstarrating.gov.au/internet/healthstarrating/publishing.nsf/Content/E380CCCA07E1E42FCA257DA500196044/$File/HSR%20System%20Calculator%20and%20Style%20Guide%20v8.pdf).
+
 [Use the web calculator here](https://muhashi.com/health-star-rating-web/)
 
 ## Install
@@ -58,6 +60,8 @@ One of the following values will be returned:
 
 Type: `Category`
 
+Category of the food. Use the most specific category possible.
+
 These are the possible categories:
 - `DairyBeverages`
 - `DairyFoods`
@@ -71,7 +75,7 @@ These are the possible categories:
   - Must not include -- added sugars, sweeteners, colours, sodium, caffeine, quinine, or any other ingredient that contains energy.
 - `UnprocessedFruitAndVegetables`
   - Includes: *"All whole fresh fruit (except coconut) and vegetables, fungi and legumes (except peanuts) as sold with no processing, plus these same products that have only been peeled, cut and/or surface treated and/or blanched and/or frozen (not dried), or canned without the addition of fat, sugars/sweeteners or salt."*
-  - Excludes: canned fruit and vegetables in juice and brine 
+  - Excludes: canned fruit and vegetables in juice and brine
 - `NonDairyBeverages`
 - `Jellies`
 - `WaterBasedIcedConfection`
@@ -94,6 +98,8 @@ Optional keys:
 - `attributes` (`Attributes[]`): If the food contains either non-concentrated fruit/vegetable/nuts/legumes sources or concentrated fruits or vegetables. `percentageFruitVegetableNutLegume` must be set if using this
 
 ### `Attributes`
+
+Attributes of the food, such as whether the food contains non-concentrated fruit/vegetable/nuts/legumes sources or concentrated fruits or vegetables.
 
 Possible values:
 - `ContainsFruitOrVegetable`
