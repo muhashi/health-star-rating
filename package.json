@@ -36,7 +36,7 @@
         "drink"
     ],
     "devDependencies": {
-        "ava": "^6.1.3",
+        "ava": "^7.0.0",
         "tsd": "^0.33.0"
     }
 }
